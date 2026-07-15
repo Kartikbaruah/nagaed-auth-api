@@ -210,6 +210,13 @@ you'd be handing attackers a way to check which emails are registered.
 - Generic error messages so failed logins don't leak which emails exist
 - `.env` is gitignored, `.env.example` is there as a template instead
 
+## Note on Docker
+
+This submission covers Task 1 and Task 2 only. There's a `Dockerfile` for
+the API included as a bonus — Task 4 wasn't part of this submission, but
+I had the container setup half-ready and figured I'd leave it in as a
+small extra, not a claim that Docker Compose / Task 4 is complete.
+
 ## What's not here
 
 - No email verification — wasn't in scope for this
