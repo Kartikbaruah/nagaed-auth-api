@@ -1,0 +1,103 @@
+.terminal-field {
+  display: block;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 5;
+}
+
+.terminal-field-label {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.terminal-field-input {
+  width: 100%;
+  background: var(--void);
+  border: 1px solid var(--panel-seam);
+  border-radius: 3px;
+  color: var(--text-primary);
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.terminal-field-input:focus {
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 2px rgba(70, 232, 224, 0.15);
+}
+
+.terminal-field-error {
+  display: block;
+  color: var(--red);
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.terminal-submit {
+  width: 100%;
+  background: var(--cyan-dim);
+  border: 1px solid var(--cyan);
+  color: var(--text-primary);
+  padding: 11px;
+  border-radius: 3px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  margin-top: 6px;
+  transition: background 0.15s, opacity 0.15s;
+  position: relative;
+  z-index: 5;
+}
+
+.terminal-submit:hover:not(:disabled) {
+  background: var(--cyan);
+  color: var(--void);
+}
+
+.terminal-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.terminal-switch {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  position: relative;
+  z-index: 5;
+}
+
+.terminal-switch a {
+  text-decoration: none;
+}
+
+.terminal-switch a:hover {
+  text-decoration: underline;
+}
+
+.form-error-banner {
+  background: rgba(255, 71, 87, 0.1);
+  border: 1px solid var(--red);
+  color: var(--red);
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.form-success-banner {
+  background: rgba(70, 232, 224, 0.1);
+  border: 1px solid var(--cyan);
+  color: var(--cyan);
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}

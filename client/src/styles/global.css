@@ -1,0 +1,61 @@
+:root {
+  --void: #0a0c0e;
+  --panel: #1b1f24;
+  --panel-raised: #262b31;
+  --panel-seam: #33393f;
+  --steel-dark: #12151a;
+  --cyan: #46e8e0;
+  --cyan-dim: #1f6763;
+  --amber: #ffb020;
+  --red: #ff4757;
+  --text-primary: #e8edf2;
+  --text-muted: #7c8792;
+  --font-display: 'Space Mono', monospace;
+  --font-body: 'Inter', -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--void);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  overflow: hidden;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+a {
+  color: var(--cyan);
+}
+
+::selection {
+  background: var(--cyan-dim);
+  color: var(--text-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
